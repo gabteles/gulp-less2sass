@@ -4,7 +4,7 @@ gulp-less2sass
 Translate LESS to SASS using Gulp
 
 ## Installation
-```bash
+```
 npm install gulp-less2sass --save
 ```
 
@@ -24,8 +24,8 @@ gulp.task('less2sass', function() {
 
 ## Tests
 
-```bash
-$  npm test
+```
+npm test
 ```
 
 Also check test/project to see a simple application of gulp-less2sass, using gulp task to convert a less file to scss.
