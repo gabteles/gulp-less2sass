@@ -20,6 +20,15 @@ gulp.task('less2sass', function() {
 
 	// Check ./output/in.scss
 });
+
+gulp.task('less2css-without-less', function() {
+	gulp.src('in.less')
+		.pipe(less2sass())
+		.pipe(sass())
+		.pipe(gulp.dest('./output'))
+
+	// Check ./output/in.css
+});
 ```
 
 ## Tests
