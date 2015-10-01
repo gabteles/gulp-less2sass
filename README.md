@@ -11,6 +11,7 @@ npm install gulp-less2sass --save
 ## Usage
 ```javascript
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 var less2sass = require('gulp-less2sass');
 
 gulp.task('less2sass', function() {
