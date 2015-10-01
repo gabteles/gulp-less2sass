@@ -4,7 +4,7 @@ gulp-less2sass
 Translate LESS to SASS using Gulp
 
 ## Installation
-```javascript
+```bash
 npm install gulp-less2sass --save
 ```
 
