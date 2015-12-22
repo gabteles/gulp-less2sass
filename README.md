@@ -47,4 +47,7 @@ Add unit tests for any new or changed functionality.
 
 ## Release History
 
-* 0.0.1 Beta version
+| Date | Version | Description |
+|-------------|---------|------------------------------------------------------------------------------------------------------------------|
+| Dec/22/2015 | 0.0.2 | Adding semicolons dividing mixin parameters support. |
+| Sep/30/2015 | 0.0.1 | Parses basic less to sass. Won't work with mixins using `when` statement or semicolons dividing it's parameters. |
