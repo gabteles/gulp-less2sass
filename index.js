@@ -27,6 +27,9 @@ var REPLACES = [
 	// mixins
 	[/[\.#]([\w\-]*)(\s*)\((.*)\)(\s*)\{/gi, "@mixin $1$2($3)$4{"],
 
+	// mixins w/ simicolons on parameters 
+	[/;(?=((?!\().)*?\))/gi, ","],
+
 	// @include 
 	[/[^:\{]*(@include\W(\W*))([.#][^(;\{]*;)/gi, "@extend $2$3"],
 

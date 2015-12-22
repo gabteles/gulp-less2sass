@@ -171,4 +171,13 @@ describe('gulp-less2sass', function() {
 			done
 		);
 	});
+
+	// Semicolon parameters on mixins
+	it('should handle mixins with parameters divided by semicolons', function(done) {
+		expectTransformation(
+			".button-outline-variant(@color; @activeTextColor: #fff) {\n color: @color; \n}",
+			"@mixin button-outline-variant($color, $activeTextColor: #fff) {\n color: $color; \n}",
+			done
+		);
+	});
 });
